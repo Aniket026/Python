@@ -1,0 +1,25 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# F string
+score=90
+hight=1.4
+win=true
+print(f"Your score is (score), your hight is {hight} and you are {win})
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#round
+print(round(8.99333,2)
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Bil tip calculator 
+
+print("Welcome in Tip Calculator !")
+Total=int(input("What was the total bill  :"))
+Tip=int(input("How much tip you want to give : "))
+People=int(input("How much people you want slipt :"))
+Bil_with_tip=Tip/100*Total+Total
+Total_bill_per_person=Bil_with_tip/People
+print(f"Total Tip per person is {Total_bill_per_person}")
