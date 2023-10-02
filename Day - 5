@@ -1,0 +1,84 @@
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#Python supports the usual logical conditions from mathematics:
+
+#Equals: a == b
+#Not Equals: a != b
+#Less than: a < b
+#Less than or equal to: a <= b
+#Greater than: a > b
+#Greater than or equal to: a >= b
+
+a = 33
+b = 30
+if b > a:
+  print("b is greater than a")
+elif :
+  print("a  is  greater than b")
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#Even odd program
+
+num=int(input("Enter number to check even or odd :"))
+if (num/2==0):
+ print("it is even")
+else:
+    print("it is odd")
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#Nested condition
+
+num = 15
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#elif
+
+number = 0
+if number > 0:
+    print("Positive number")
+elif number == 0:
+    print('Zero')
+else:
+    print('Negative number')
+print('This statement is always executed')
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#BMI 0.2
+
+height float(input()) 
+#in meters e.g., 1.55 
+weight int(input()) 
+#in kilograms e.g., 72
+# Your code below this line
+bmi_weight=weight /height*height
+if bmi < 18.5:
+print("Your BMT is (bmi), you are underweight.")
+elif bmi < 25: 
+print("Your BM is (bmi}, you have a normal weight.")
+elif bmi <30: 
+print("Your BMI is (bmi), you are slightly overweight.")
+elif bmi < 35:
+print("Your BMI is (bmi), you are obses.") 
+else:
+print("Your BMI is (bmi), you are clinically  obses.")
+
+#-----------------------------------------------------------------------------------------------------------------------------------------
+#Leaf year program
+year=int(input("Enter the year :"))
+if (year % 4==0):
+  print(f"{year} is leaf Year")
+elif (year % 400==0):
+  print(f"  {year} is leaf Year")
+elif (year % 100==0):
+  print(f" {year} is leaf Year")
+else:
+  print(f"{year} is not leaf year")
