@@ -1,0 +1,65 @@
+# Rock ,Paper and Scirror game
+
+import random
+# Rock
+Rock=("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+
+
+Paper=("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+
+
+Scissor=("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+game_img=[Rock,Paper,Scissor]
+user=int(input("Enter Rock=0,Peper=1,Scissor=2\n"))
+print(game_img[user])
+if user==0:
+    print("User=Rock")
+elif user==1:
+    print("User=Peper")
+else:
+    print("User=Scissor")
+
+random_com=random.randint(0,2)
+print(game_img[random_com])
+if random_com==0:
+    print("Computer=Rock")
+elif random_com==1:
+    print("Computer=Peper")
+else :
+    print("Computer=Scissor")
+if random_com==user:
+    print("Draw !!")
+elif user== 0 and random_com==1:
+    print("You loss")
+elif user==0 and random_com==2:
+    print("You win")
+elif user==1 and random_com==0:
+    print("You win")
+elif user==1 and random_com==2:
+    print("You loss ")
+elif user==2 and random_com==1:
+    print("You loss")
+elif user==2 and random_com==1:
+    print("You win")
+
