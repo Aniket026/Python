@@ -1,0 +1,198 @@
+# Day 6 of python 
+
+
+# Random modul
+
+import random
+random_int=random.randint(1.0,20.0)
+print(random_int)
+random_float=random.random()
+print(random_float*5)
+
+
+
+
+#--------------------------------------------------------------------------------------------------------------------
+#Heads and Tails
+
+
+import random
+random_side=random.randint(1,2)
+if random_side==1:
+    print("heads")
+else:
+    print("tails")
+
+#----------------------------------------------------------------------------------------------------------------------\
+
+
+
+#list opetations
+
+# append
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.append(4)
+myList.append(5)
+myList.append(6)
+print(myList)
+#----------------------------------------------------------------------------------------------------------------------
+#extend
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.extend([4, 5, 6])
+print(myList)
+#----------------------------------------------------------------------------------------------------------------------
+#insert
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.insert(3, 4)
+myList.insert(4, 5)
+myList.insert(5, 6)
+print(myList)
+
+#----------------------------------------------------------------------------------------------------------------------
+ 
+#remove()
+The remove() method removes an element from the list. Only the first occurrence of the same element is removed in the case of multiple occurrences.
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.remove('makes learning fun!')
+print(myList)
+
+#----------------------------------------------------------------------------------------------------------------------
+
+
+#pop()
+The method pop() can remove an element from any position in the list. The parameter supplied to this method is the element index to be removed.
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.pop(3)
+print(myList)
+Output:
+#----------------------------------------------------------------------------------------------------------------------
+
+
+#slice
+The slice operation is used to print a section of the list. The slice operation returns a specific range of elements. It does not modify the original list.
+
+
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+print(myList[:4])  # prints from beginning to end index
+print(myList[2:])  # prints from start index to end of list
+print(myList[2:4]) # prints from start index to end index
+print(myList[:])   # prints from beginning to end of list
+Output:
+#----------------------------------------------------------------------------------------------------------------------
+#reverse()
+You can use the reverse() operation to reverse the elements of a list. This method modifies the original list. We use the slice operation with negative indices to reverse a list without modifying the original. Specifying negative indices iterates the list from the rear end to the front end of the list.
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+print(myList[::-1])  # does not modify the original list
+myList.reverse()     # modifies the original list
+print(myList)
+
+#----------------------------------------------------------------------------------------------------------------------
+
+#len()
+The len() method returns the length of the list, i.e., the number of elements in the list.
+
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+print(len(myList))
+Output:
+#----------------------------------------------------------------------------------------------------------------------
+
+# min() & max()
+The min() method returns the minimum value in the list. The max() method returns the maximum value in the list. Both methods accept only homogeneous lists, i.e., lists with similar elements.
+
+
+#----------------------------------------------------------------------------------------------------------------------
+myList = [1, 2, 3, 4, 5, 6, 7]
+print(min(myList))
+print(max(myList))
+Output:
+
+#----------------------------------------------------------------------------------------------------------------------
+#count()
+The function count() returns the number of occurrences of a given element in the list.
+
+myList = [1, 2, 3, 4, 3, 7, 3, 8, 3]
+print(myList.count(3))
+Output:
+
+
+#----------------------------------------------------------------------------------------------------------------------
+#concatenate
+The concatenate operation merges two lists and returns a single list. The concatenation is performed using the + sign. It’s important to note that the individual lists are not modified, and a new combined list is returned.
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+yourList = [4, 5, 'Python', 'is fun!']
+print(myList+yourList)
+
+
+#----------------------------------------------------------------------------------------------------------------------
+# multiply
+Python also allows multiplying the list n times. The resultant list is the original list iterated n times.
+
+myList = ['EduCBA', 'makes learning fun!']
+print(myList*2)
+Output:
+#----------------------------------------------------------------------------------------------------------------------
+
+# index()
+The index() method returns the position of the first occurrence of the given element. It takes two optional parameters – the beginning index and the end index. These parameters define the start and end position of the search area on the list. When you supply the begin and end indices, the element is searched only within the sub-list specified by those indices. When not supplied, the element is searched in the whole list.
+
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+print(myList.index('EduCBA'))            # searches in the whole list
+print(myList.index('EduCBA', 0, 2))     # searches from 0th to 2nd position
+Output:
+
+#----------------------------------------------------------------------------------------------------------------------
+
+#sort()
+The sort method sorts the list in ascending order. You can only perform this operation on homogeneous lists, which means lists with similar elements.
+
+yourList = [4, 2, 6, 5, 0, 1]
+yourList.sort()
+print(yourList)
+
+#----------------------------------------------------------------------------------------------------------------------
+#clear()
+This function erases all the elements from the list and empties them.
+
+myList = [1, 2, 3, 'EduCBA', 'makes learning fun!']
+myList.clear()
+
+#----------------------------------------------------------------------------------------------------------------------
+#copy()
+The copy method returns the shallow copy list. Now the created list points to a different memory location than the original one. Hence any changes made to the list don’t affect another one.
+
+list.copy()
+
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------------------
+#Nested List 
+A nested list is a list of lists, or any list that has another list as an element (a sublist). They can be helpful if you want to create a matrix or need to store a sublist along with other data types.
+
+
+even_numbers = [2, 4, 6, 8]
+value = even_numbers.copy()
+print('Copied List:', value)
+
+
+# creating list
+nestedList = [1, 2, ['a', 1], 3]
+
+# indexing list: the sublist has now been accessed
+subList = nestedList[2]
+
+# access the first element inside the inner list:
+element = nestedList[2][0]
+
+print("List inside the nested list: ", subList)
+print("First element of the sublist: ", element)
