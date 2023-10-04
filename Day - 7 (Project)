@@ -1,0 +1,54 @@
+#Title : To create strong password
+
+import random 
+letter=['a','b','c','d','e','f','g','i','j','k','l','n','o','p','q','r','s','t',u',v','w','x','y','z']
+number=['0','1','2','3','4','5','6','7','8','9']
+symbol=['!','@','#','%','*','&']
+print("Welcome to password generator! ")
+nr_letter=int(input("How many letters would you like in your password ?"))
+nr_symbol=int(input("How many symbol would you like in your password ?"))
+nr_number=int(input("How many number  would you like in your password ?"))
+password=""
+for char in range(1,nr_letter+1): 
+    random_char=random.choice(letter)
+    password+=random_char
+#print(password)
+for char in range(1,nr_symbol+1): 
+    random_char=random.choice(symbol)
+    password+=random_char
+#print(password)
+for char in range(1,nr_number+1): 
+    random_char=random.choice(number)
+    password+=random_char
+print(password)
+
+
+
+#=================================================================
+import random 
+letter=['a','b','c','d','e','f','g','i','j','k','l','n','o','p','q','r','s','t',u',v','w','x','y','z']
+number=['0','1','2','3','4','5','6','7','8','9']
+symbol=['!','@','#','%','*','&']
+print("Welcome to password generator! ")
+nr_letter=int(input("How many letters would you like in your password ?"))
+nr_symbol=int(input("How many symbol would you like in your password ?"))
+nr_number=int(input("How many number  would you like in your password ?"))
+password=[] 
+for char in range(1,nr_letter+1): 
+    random_char=random.choice(letter)
+    password+=random_char
+#print(password)
+for char in range(1,nr_symbol+1): 
+    random_char=random.choice(symbol)
+    password+=random_char
+#print(password)
+for char in range(1,nr_number+1): 
+    random_char=random.choice(number)
+    password+=random_char
+
+random.shuffle(password)
+
+your_pass=""
+for char in password :
+    your_pass+=char
+print(f"Your password is {your_pass}")
