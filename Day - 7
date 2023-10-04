@@ -1,0 +1,68 @@
+# Day - 7
+
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+# For loop : loops allows to execut the same line of code multipal times .
+
+fruits=["apple","mango","orange"]
+for fruit in fruits:
+    print(fruit + " pie")
+    print(fruit)
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+#claculet thr average of student hight 
+
+students_hight=input("Enter thr hights of student :").split()
+for n in range(0 , len(students_hight)):
+    students_hight[n]=int(students_hight[n])
+total_hight=0;
+for hight in students_hight:
+    total_hight+=hight
+print(f"total hight of students {total_hight}")
+number_of_students=0;
+for hight in students_hight:
+    number_of_students+=1
+print(f"total number of students {number_of_students}")
+avg=total_hight/number_of_students
+print(f"Average of student hight is : {avg}")
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+
+#Clacutale the highest score of student:
+students_score=input("Enter thr students_score of student :").split()
+for n in range(0 , len(students_score)):
+    students_score[n]=int(students_score[n])
+highest_score=0;
+for score in students_score:
+    if score>highest_score:
+        highest_score=score
+print(f"the highest score is : {highest_score}")
+
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+#addtion of 1 to 100
+
+total=0
+for number in range(1,101):
+    total+=number
+print(total)
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+#addition even number between two number
+
+Even_sum=0
+for number in range(1,101):
+    if number%2==0:
+        Even_sum+=number 
+print(Even_sum)
+
