@@ -1,0 +1,65 @@
+Day - 8
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------
+# Function : Function is pice of code that perform specofic task and runs when it is called.
+
+
+
+
+def my_function():
+    print("hello")
+my_function()
+
+def my_function2():
+    a=5
+    if a>2:
+        print("world")
+    print("hello")
+my_function2()
+
+
+
+#----------------------------------------------------------------------------------------------------------------------
+# While loop :it execut till  condition become a true.
+
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+
+#-----------------------------------------------------------------------------------------------------------------
+#Reeborg world
+
+
+def turn_right():
+    turn_left
+    turn_left()
+    turn_left()
+def jump ():
+    turn_left()
+    move()
+    turn_right
+    move()
+    turn_right
+    move()
+    turn_left()
+while not at_gole():
+    if wall_in_front:
+        jump()
+    else:
+        move()
+a=9
+while a>0:
+    print("hello")
+    a-=1
