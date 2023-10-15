@@ -1,0 +1,35 @@
+#------------------------------------------------------------------------------------------------
+#globle variable
+enemies = 1  #Globle 
+
+def increase_enemies():
+  enemies = 2
+  print(f"enemies inside function: {enemies}")
+
+increase_enemies()
+print(f"enemies outside function: {enemies}")
+
+
+
+
+
+#------------------------------------------------------------------------------------------------
+#local scope
+
+
+def increase_enemies():
+  enemies = 2 # local
+  print(f"enemies inside function: {enemies}")
+
+increase_enemies()
+
+
+
+#------------------------------------------------------------------------------------------------
+#Modifying Globle variable
+
+my_hight=6
+def mu_fun():
+     globle my_hight
+     my_hight+=1
+     print(my_hight)
