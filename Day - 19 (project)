@@ -8,7 +8,7 @@ question_data = [
 {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answer": "True"},
 {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral.", "answer": "False"},
 {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
-{"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
+{"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"}, 
 {"text": "Google was originally called 'Backrub'.", "answer": "True"},
 {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
 {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
