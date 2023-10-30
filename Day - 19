@@ -1,0 +1,25 @@
+class User :
+    pass
+user_1=User()
+user_1.id="1"
+user_1.name="aniket"
+print(user_1.name)
+
+
+class User :
+    
+    def __init__(self):
+        print("hello")
+user_1=User()
+user_1.id="1"
+user_1.name="aniket"
+print(user_1.name)
+
+
+class User :
+    
+    def __init__(self,user_id,user_name):
+        self.id=user_id
+        self.name=user_name
+user_1=User("22","rahul")
+print(user_1.id)
